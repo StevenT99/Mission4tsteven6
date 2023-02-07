@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Steven Thorpe's Legendary Website";
+}
+<h1>Steve Thorpe</h1>
+<br />
+<img src="img/ski.png" width="1000" height="500" />
+<p>I really want to gain some mad C# skills. One of our websites at work is an ASP site and I want to be able to edit it and know how to work with it. I also want to be confident in building applications for different uses! I think I will be able to accomplish all of this. </p>
+<br />
+<ul>
+    <li>1: Software Engineer</li>
+    <li>2: Cybersecurity Specialist</li>
+    <li>3: Director of IT</li>
+</ul>
+<h2>Grade Calculator</h2>
+<form>
+    <label>Assignments</label>
+    <input id="assignmentsGrade" /><br />
+    <label>Group Project</label>
+    <input id="projectGrade" /><br />
+    <label>Quizzes</label>
+    <input id="quizzesGrade" /><br />
+    <label>Midterm Exam</label>
+    <input id="midtermGrade" /><br />
+    <label>Final Exam</label>
+    <input id="finalGrade" /><br />
+    <label>INTEX</label>
+    <input id="intexGrade" /><br />
+    <input id="calculateGrade" type="button" value="Calculate" />
+</form>
+<div>
+    <p>Final Percentage: <span id="finalPercentage"></span></p>
+    <p>Letter Grade: <span id="letterGrade"></span></p>
+</div>
+    
+<script src="js/GradeCalculator.js"></script>
+
