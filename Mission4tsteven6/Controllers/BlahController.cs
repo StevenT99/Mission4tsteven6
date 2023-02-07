@@ -12,5 +12,16 @@ namespace Mission4tsteven6.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult CalculatorView()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult CalculatorView(object model)
+        {
+            return View()
+        }
     }
 }
