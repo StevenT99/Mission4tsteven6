@@ -3,25 +3,29 @@
 *@
 @{
 }
+
+@model CalculatorModel;
 <h2>Grade Calculator</h2>
 <form method="post">
     <label>Assignments</label>
-    <input id="assignmentsGrade" name="Assignment" /><br />
+    <input id="assignmentsGrade"asp-for="Assignment" /><br />
     <label>Group Project</label>
-    <input id="projectGrade" name="GroupProject" /><br />
+    <input id="projectGrade" asp-for="GroupProject" /><br />
     <label>Quizzes</label>
-    <input id="quizzesGrade" name="Quizzes" /><br />
+    <input id="quizzesGrade" asp-for="Quizzes" /><br />
     <label>Midterm Exam</label>
-    <input id="midtermGrade" name="MidtermExam" /><br />
+    <input id="midtermGrade" asp-for="MidtermExam" /><br />
     <label>Final Exam</label>
-    <input id="finalGrade" name="FinalExam" /><br />
+    <input id="finalGrade" asp-for="FinalExam" /><br />
     <label>INTEX</label>
-    <input id="intexGrade" name="INTEX" /><br />
+    <input id="intexGrade" asp-for="INTEX" /><br />
     <input id="calculateGrade" type="submit" value="Calculate" />
+
+    <div asp-validation-summary="All"></div>
 </form>
 <div>
-    <p>Final Percentage: <span id="finalPercentage"></span></p>
-    <p>Letter Grade: <span id="letterGrade"></span></p>
+    <p>Final Percentage: <span id="finalPercentage" asp-for="FinalPercentage"></span></p>
+    <p>Letter Grade: <span id="letterGrade" asp-for="LetterGrade"></span></p>
 </div>
 
 <script src="js/GradeCalculator.js"></script>

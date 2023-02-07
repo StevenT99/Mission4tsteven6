@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission4tsteven6.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,9 +20,9 @@ namespace Mission4tsteven6.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult CalculatorView(object model)
+        public IActionResult CalculatorView(CalculatorModel model)
         {
-            return View()
+            return View();
         }
     }
 }
