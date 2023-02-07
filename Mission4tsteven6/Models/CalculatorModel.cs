@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mission4tsteven6.Models
 {
-    public class CalculatorModel
+    public class CalculatorModel 
     {
         [Range(0, 100, ErrorMessage = "Assignment score must be between 0 and 100.")]
         public float Assignment { get; set; }
