@@ -1,4 +1,5 @@
 ﻿$("#calculateGrade").click(function () {
+    $("form").submit();
     //Here I set the value of all of the weights
     var assignmentsWeight = 0.5;
     var projectWeight = 0.1;
@@ -54,6 +55,6 @@
     }
     
     //Here I convert it to a string for the display on my webpage
-    $("#finalPercentage").text((totalGrade * 100).toString() + "%");
-    $("#letterGrade").text(letterGrade);
+    $("#FinalPercentage").text((totalGrade * 100).toString() + "%");
+    $("#LetterGrade").text(letterGrade);
 });

@@ -22,7 +22,10 @@ namespace Mission4tsteven6.Controllers
         [HttpPost]
         public IActionResult CalculatorView(CalculatorModel model)
         {
-            return View();
+            model.FinalPercentage = float.Parse(Request.Form["FinalPercentage"]);
+            model.LetterGrade = float.Parse(Request.Form["LetterGrade"]);
+
+            return View(model);
         }
     }
 }
